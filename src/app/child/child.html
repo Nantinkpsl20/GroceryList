@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Add a grocery</h2>
+  <div>
+    <label for="grocery-input">Add Grocery</label>
+    <input type="text" id="grocery-input" #newItem /><!--new item is a variable, the user's input-->
+    <span><button type="button" (click)="addNewGrocery(newItem.value)">Add</button></span>
+  </div>
+</div>

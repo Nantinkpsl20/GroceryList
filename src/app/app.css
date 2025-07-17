@@ -1,0 +1,12 @@
+h1{
+    color:Red;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}  
+
+ul{
+    padding-left: 40%;
+    margin: 0;
+    font-size: 20px;
+    color: white;
+}
