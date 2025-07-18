@@ -1,7 +1,17 @@
 <div class="container">
   <h1>Groceries</h1>
+
+  <!--first way to outputting the list items
+  
   <ul *ngFor="let grocery of groceryList">
     <li>{{ grocery }}</li>
+  </ul>-->
+
+  <!--like the course-->
+  <ul>
+    @for(grocery of groceryList; track grocery) {
+        <li>{{ grocery }}</li>
+    }
   </ul>
   <app-child (emitGrocery)="addGrocery($event)"></app-child>
 </div>
